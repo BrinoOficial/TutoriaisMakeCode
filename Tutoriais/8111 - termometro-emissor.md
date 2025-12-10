@@ -20,5 +20,10 @@ basic.forever(function () {
 })
 ```
 
-## {Teste}
-Baixe o código para o microbit emissor e siga as instruções no seu livro.
+## {Colocando o código no micro:bit}
+
+Conecte o @boardname@ no computador, clique no botão ``|Download|`` e siga os passos para baixar o código para a sua placa.
+
+⭐ Ótimo trabalho! ⭐ Você transformou o micro:bit no Termômetro sem fio com micro:bit – EMISSOR
+
+Agora siga os passos disponíveis no seu livro para terminar o projeto.
