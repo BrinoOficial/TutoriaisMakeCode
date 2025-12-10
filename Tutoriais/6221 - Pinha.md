@@ -1,21 +1,107 @@
 # Jogo da Pinha
 
-## {Criando Variáveis}
- 
-Crie as variáveis ``||variables:Sabrina||`` e ``||variables:Pinha||``.
+## Sobre o jogo
+O jogo da pinha é um jogo em que o jogador deve clicar no botão A no exato momento que um ponto (sprite) passar pelo centro da tela.
 
-## {Criando Variáveis} 
-Dentro de ``||basic:no iniciar||`` use o bloco ``||variables:definir||``:
-1. Defina Sabrina para ``||game:criar sprite em x:2 y:4||``
-2. Defina Pinha para ``||game:criar sprite em x:0 y:0||``
+## {Criando nosso sprite}
+Vamos iniciar a programação do nosso jogo criando o nosso sprite, que deve desviar das pinhas!
 
-E ``||variables:Variável||`` para ``||variables:Sabrina||``.
+1. Na categoria ``||variables:Variáveis||``, clique em **"Fazer uma variável..."** e chame-a de ``||variables:Sprite||``.
+2. Arraste o bloco ``||variables:definir Sprite para(0)||`` (``||variables:Variáveis||``) para dentro do bloco ``||basic:no iniciar||``.
+3. Na categoria ``||game:Jogo||`` (Avançado), pegue o bloco ``||game:criar sprite em x: (2) y:(2) ||`` e coloque-o dentro do bloco ``||variables:definir sprite para(0)||`` substituindo o **0**. 
+4. Altere o valor de Y para 4 para que fique ``||game:criar sprite em x: (2) y:(4) ||``
+
+```blocks
+let sprite: game.LedSprite = null
+sprite = game.createSprite(2, 4)
+```
+
+## {Criando nossas pinhas}
+Agora iremos criar as nossas pinhas que irão cair do céu.
+
+1. Faça o mesmo processo para criar uma variável chamada `||variables:Pinha||``.
+2. Arraste o bloco ``||variables:definir Pinha para(0)||`` (``||variables:Variáveis||``) para dentro do bloco ``||basic:no iniciar||``.
+3. Na categoria ``||game:Jogo||`` (Avançado), pegue o bloco ``||game:criar sprite em x: (2) y:(2) ||`` e coloque-o dentro do bloco ``||variables:definir sprite para(0)||`` substituindo o **0**. 
+4. Altere o valor de Y para 0 para que fique ``||game:criar sprite em x: (2) y:(0) ||``
+5. Na categoria ``||math:Matemática||``, insira o bloco ``||math:escolher aleatório (0) até (10)||`` no valor de X no bloco ``||game:criar sprite em x: (2) y:(0) ||``
+6. Atualize o valor do bloco para que ele fique ``||math:escolher aleatório (0) até (4)||`` 
+
+```blocks
+let sprite: game.LedSprite = null
+sprite = game.createSprite(2, 4)
+let pinha = game.createSprite(randint(0, 4), 0)
+```
+
+## {Definindo a pontuação}
+ Vamos iniciar o nosso contador da pontuação:
+
+1. Na categoria ``||game:Jogo||`` (Avançado), pegue o bloco ``||game:definir pontuação (0)||`` e coloque-o no final do bloco ``||basic:no iniciar||``. 
+
+ ```blocks
+let sprite: game.LedSprite = null
+sprite = game.createSprite(2, 4)
+let pinha = game.createSprite(randint(0, 4), 0)
+game.setScore(0)
+```
+
+
+
+## {Movimentando o sprinte - A} 
+Vamos configurar a movimentação do nosso personagem para a esquerda
+
+1. Na categoria ``||input:Entrada||``, arraste o bloco ``||input:no botão A pressionado||`` para o nosso código
+2. Arraste o bloco ``||game:(sprite) mover por (1)||``(``||game:Jogo||``)
+3. Atualize o valor do mover para que fique ``||game:(sprite) mover por (-1)||``
+
 
 
 ```blocks
-let Pinha = game.createSprite(0, 0)
-let Sabrina = game.createSprite(2, 4)
+input.onButtonPressed(Button.A, function () {
+    sprite.move(-1)
+})
+let sprite: game.LedSprite = null
+sprite = game.createSprite(2, 4)
+let pinha = game.createSprite(randint(0, 4), 0)
+game.setScore(0)
 ```
+
+## {Movimentando o sprinte - B} 
+Agora vamos configurar a movimentação do nosso personagem para a direita
+
+1. Arraste o bloco ``||input:no botão A pressionado||`` para o nosso código e altere para o botão B, de modo que fique ``||input:no botão B pressionado||``
+2. Arraste o bloco ``||game:(sprite) mover por (1)||``(``||game:Jogo||``)
+
+
+
+```blocks
+input.onButtonPressed(Button.A, function () {
+    sprite.move(-1)
+})
+input.onButtonPressed(Button.B, function () {
+    sprite.move(1)
+})
+let sprite: game.LedSprite = null
+sprite = game.createSprite(2, 4)
+let pinha = game.createSprite(randint(0, 4), 0)
+game.setScore(0)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## {Criando Variáveis}
 1. Arraste o bloco ``||math:escolher aleatório||`` para o **x** de onde será criada a ``||variable:Pinha||``.  
