@@ -1,5 +1,8 @@
+# Jornada Tech
+### Por: Br.ino - Robótica Educacional
 
-> Abrir essa página em [https://jonfrancis.github.io/tutoriaismakecode/](https://jonfrancis.github.io/tutoriaismakecode/)
+## Sobre o repositório
+Este repositório possue os códigos utilizados na coleção de livros para o Ensino Fundamental Anos Finais (EFAF) do Br.ino!
 
 ## Usar como extensão
 
@@ -8,15 +11,12 @@ Este repositório pode ser adicionado como **extensão** no MakeCode.
 * abrir [https://makecode.microbit.org/](https://makecode.microbit.org/)
 * clique em **Novo Projeto**
 * clique em **Extensões** em baixo do menu com ícone de engrenagem
-* procure por **https://github.com/jonfrancis/tutoriaismakecode** e importe
+* procure por **https://github.com/BrinoOficial/TutoriaisMakeCode/** e importe
 
-## Editar este projeto
+## Criando os tutoriais MakeCode
 
-Para editar este repositório no MakeCode.
+Utilize a plataforma [https://makecode.com/tutorial-tool](https://makecode.com/tutorial-tool)
 
-* abrir [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* clique em **Importar** e depois clique em **Importar URL**
-* cole **https://github.com/jonfrancis/tutoriaismakecode** e clique em importar
 
 #### Metadados (usados para pesquisa, renderização)
 
