@@ -1,4 +1,4 @@
-# Name Tag - Crachá
+# Crachá
 
 ## Transforme seu micro:bit em um crachá digital @unplugged
 
@@ -8,7 +8,7 @@ Veja seu nome em 💡 luzes! 💡 Programe o micro:bit para rolar seu nome pela 
 
 ## {Código}
 
-Arraste um bloco ``||basic:mostrar string||`` para dentro do bloco ``||basic:sempre||``. 
+Da categoria ``||basic:Básico||``, arraste um bloco ``||basic:mostrar string||``  para dentro do bloco ``||basic:sempre||``. 
 
 Depois, no bloco ``||basic:mostrar string||``, troque o texto de "Hello!" para o seu nome.
 
@@ -18,9 +18,9 @@ basic.forever(function() {
 })
 ```
 
-## {Colocando o Còdigo no micro:bit}
+## {Colocando o código no micro:bit}
 
-Conecte o @boardname@ no computador e clique no botão ``|Download|``.
+Conecte o @boardname@ no computador, clique no botão ``|Download|`` e siga os passos para baixar o código para a sua placa.
 
 ⭐ Ótimo trabalho! ⭐ Você transformou o micro:bit em um crachá digital!
 
