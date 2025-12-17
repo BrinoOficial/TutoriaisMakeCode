@@ -91,7 +91,7 @@ basic.forever(function () {
 ```
 
 ## {Testando reflexos}
-Chegou a grande hora! Vamos testar o nosso jogo dos reflexos. Primeiro teste o jogo no preview do @boardname no lado esquerdo da tela.
+Chegou a grande hora! Vamos testar o nosso jogo dos reflexos. Primeiro teste o jogo no preview do micro:bit no lado esquerdo da tela.
 
 Com o jogo finalizado e funcionando, conecte seu micro:bit, clique em ``|Baixar|`` e siga os passos apresentados.
 
